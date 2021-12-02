@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Adrián Pascual Becerra">
+	<meta name="copyright" content="Adrián Pascual Becerra">
+	<meta name="contact" content="hola@apbwebdesign.com">
+	<meta name="description" content="Entra y echa un vistazo a mi web personal, donde podrás ver desde mi portfolio hasta el curriculum. Espero que te guste, y si necesitas una web, ponte en contacto.">
+	<meta name="keywords" content="adrian pascual becerra, diseño web, Huelva, Andalucía, España, cv, html, wordpress, javascript, css, portfolio, paginas, internet">
+	<meta name="robots" content="Index, Follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<meta name="google-site-verification" content="ETzfWaodalxH9vjhTEIPa8Sx_SoV1B6TbEBIP__Fci4" />
+	<link rel="canonical" href="https://apbwebdesign.com/">
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="icon" type="icon/png" href="favicon.ico">
+
+
+	<title>Adrián Pascual Becerra</title>
+</head>
+<body>
+	<!-- Contenedor de las diferentes secciones -->
+	<div class="container">
+		<!-- Sección principal o inicial -->
+		<section class="secciones seccionPrincipal">
+			<!-- Menú, que no lleva enlaces ya que se intercambiará entre secciones a través de JavaScript -->
+			<nav class="menu menuHola">
+				<ul>
+					<li class="hola">Hola Mundo!</li>
+					<li>|</li>
+					<li onclick="sobreMi()" class="sobre">Sobre Mi</li>
+					<li>|</li>
+					<li onclick="porfolio()" class="porf">Portfolio</li>
+					<li>|</li>
+					<li onclick="contacto()" class="cont">Contacto</li>
+					<li>|</li>
+					<li onclick="curri()" class="cv">CV</li>
+				</ul>
+			</nav>
+			<div class="menuHam">
+				<div class="esquinaSI"></div>
+				<div class="esquinaID"></div>
+				<div onclick="menuHamburguesa()" class="cruz">
+					<div class="diagonalCruz"></div>
+					<div class="diagonalCruzG"></div>
+				</div>
+				<div class="menuHamHola">
+					<ul class="ulHola">
+						<li class="holaHam">Hola Mundo!</li>
+						<li onclick="sobreMi()" class="sobreHam">Sobre Mi</li>
+						<li onclick="porfolio()" class="porfHam">Portfolio</li>
+						<li onclick="contacto()" class="contHam">Contacto</li>
+						<li onclick="curri()" class="cvHam">CV</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menuHam menuHamHolita">
+				<p>Hola Mundo!</p>
+			</div>
+			<div class="miFoto"></div>
+			<div class="textoPrincipal">
+				<p>Mi nombre es</p>
+<!-- -----Le pongo h1 a mi nombre, porque quiero que sea lo más importante para google dentro de mi web------->
+				<h1>Adrián Pascual Becerra</h1>
+				<p>Y soy <em>Front-end developer</em></p>
+				<div onclick="sobreMi()" class="pasitos">
+					<span class="pasas">Pasa </span>
+					<span> y conóceme un poco mejor</span>
+				</div>
+			</div>
+			<div class="burbujas">
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+			</div>
+		</section>
+
+		<section class="secciones sobreMi">
+			<!-- Menú, que no lleva enlaces ya que se intercambiará entre secciones a través de JavaScript -->
+			<nav class="menu menuSobre">
+				<ul>
+					<li onclick="hola()" class="hola">Hola Mundo!</li>
+					<li>|</li>
+					<li  class="sobre">Sobre Mi</li>
+					<li>|</li>
+					<li  onclick="porfolio()" class="porf">Portfolio</li>
+					<li>|</li>
+					<li onclick="contacto()" class="cont">Contacto</li>
+					<li>|</li>
+					<li onclick="curri()" class="cv">CV</li>
+				</ul>
+			</nav>
+			<div class="menuHamS">
+				<div class="esquinaSIS"></div>
+				<div class="esquinaIDS"></div>
+				<div onclick="menuHamburguesaS()" class="cruzS">
+					<div class="diagonalCruzS"></div>
+					<div class="diagonalCruzGS"></div>
+				</div>
+				<div class="menuHamSobre">
+					<ul class="ulSobre">
+						<li onclick="hola()" class="holaHam">Hola Mundo!</li>
+						<li class="sobreHam">Sobre Mi</li>
+						<li onclick="porfolio()" class="porfHam">Portfolio</li>
+						<li onclick="contacto()" class="contHam">Contacto</li>
+						<li onclick="curri()" class="cvHam">CV</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menuHamS menuHamSobrita">
+				<p>Sobre mi</p>
+			</div>
+<!-- Con el siguiente contenedor lo que consigo es hacer como un plano en diédrico, con sus cuatro cuadrantes y solo muestro 1, el primero, y después giramos el contenedor al completo con una transición y vemos como gira -->
+			<div class="contenedorSobre" id="contenedorSobre">
+				<div class="cuadrante1">
+					<div class="imaCua1">
+						<p>Fotos por <a href="https://www.instagram.com/manuelpascualbonaque/" target="__blank" rel="nofollow">Manolo Pascual</a></p>
+					</div>
+					<p>Como ya sabéis mi nombre es Adrián Pascual Becerra, soy de Huelva, una pequeña ciudad al suroeste de la península ibérica, más conocida por su jamón y sus gambas, pero llena de rincones maravillosos y por supuesto de interminables playas.
+					Espero que con este pequeño paseo podáis conocerme un poco mejor.</p>
+				</div>
+				<div class="cuadrante2">
+					<div class="cuaTexto2">
+						<p>Siempre he sido una persona muy curiosa, desde pequeño me preguntaba como y por qué pasaban las cosas, quizás por eso me fascinara tanto la magia, y esto con los años me ha llevado a resolver problemas de forma rápida y eficaz</p>
+					</div>
+					<div class="imaCua2"></div>
+				</div>
+				<div class="cuadrante3">
+					<p>Tras mi paso por el sector eléctrico, como técnico de sistemas de energía renovable,  decidí reorientar mi carrera profesional. Empecé mi formación en el mundo de la programación de manera autodidacta, con Python. Conforme avanzaba, más dudas me surgían, pero me encontré con algo desconocido a la vez que fascinante</p>
+					<div class="imaCua3"></div>
+				</div>
+				<div class="cuadrante4">
+					<div class="imaCua4"></div>
+					<div class="cuaTexto4">
+						<p>Perseveré, y decidí que la mejor manera para profesionalizarme era formándome académicamente. Por esta razón escogí CEI. No pude hacer mejor elección. Entre sus enseñanzas y mi estudio, en solo unos meses he obtenido los conocimientos suficientes para crear esta web</p>
+					</div>
+				</div>
+			</div>
+			<div onclick="avanzaSobre()" class="flechaAvanza" id="flechaAvanza"></div>
+			<div onclick="atrasSobre()" class="flechaAtras" id="flechaAtras"></div>
+			
+			<div class="burbujas">
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+			</div>
+		</section>
+		<section class="secciones porfolio">
+			<!-- Menú, que no lleva enlaces ya que se intercambiará entre secciones a través de JavaScript -->
+			<nav class="menu menuPorf">
+				<ul>
+					<li onclick="hola()" class="hola">Hola Mundo!</li>
+					<li>|</li>
+					<li onclick="sobreMi()" class="sobre">Sobre Mi</li>
+					<li>|</li>
+					<li class="porf">Portfolio</li>
+					<li>|</li>
+					<li onclick="contacto()" class="cont">Contacto</li>
+					<li>|</li>
+					<li onclick="curri()" class="cv">CV</li>
+				</ul>
+			</nav>
+
+			<div class="menuHamP">
+				<div class="esquinaSIP"></div>
+				<div class="esquinaIDP"></div>
+				<div onclick="menuHamburguesaP()" class="cruzP">
+					<div class="diagonalCruzP"></div>
+					<div class="diagonalCruzGP"></div>
+				</div>
+				<div class="menuHamPorf">
+					<ul class="ulPorf">
+						<li onclick="hola()" class="holaHam">Hola Mundo!</li>
+						<li onclick="sobreMi()" class="sobreHam">Sobre Mi</li>
+						<li class="porfHam">Portfolio</li>
+						<li onclick="contacto()" class="contHam">Contacto</li>
+						<li onclick="curri()" class="cvHam">CV</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menuHamP menuHamPorfito">
+				<p>Portfolio</p>
+			</div>
+
+			<div class="contenedorCaro">
+				<div onmouseover="bloquear1()" onmouseout="continuar()" class="pagWeb1" id="pagWeb1">
+					<div class="explicaWeb1">
+						<p>Práctica en la cual teníamos que hacer una pequeña landing page sobre Spiderman</p>
+						<a href="https://apbwebdesign.com/spiderman/" target="__blank">Visitar web</a>
+					</div>
+				</div>
+				<div onmouseover="bloquear2()" onmouseout="continuar()" class="pagWeb2" id="pagWeb2">
+					<div class="explicaWeb2">
+						<p>Práctica en la cual teníamos que hacer una pequeña landing page sobre El Padrino usando el framework de CSS, Metro4</p>
+						<a href="https://apbwebdesign.com/padrino/" target="__blank">Visitar web</a>
+					</div>
+				</div>
+				<div onmouseover="bloquear3()" onmouseout="continuar()" class="pagWeb3" id="pagWeb3">
+					<div class="explicaWeb3">
+						<p>Primera web para móvil sobre el museo de 007</p>
+						<a href="https://apbwebdesign.com/007/" target="__blank">Visitar web</a>
+					</div>
+				</div>
+			</div>
+			<div class="burbujas">
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+			</div>
+			
+		</section>
+		<section class="secciones contacto">
+			<!-- Menú, que no lleva enlaces ya que se intercambiará entre secciones a través de JavaScript -->
+			<nav class="menu menuCont">
+				<ul>
+					<li onclick="hola()" class="hola">Hola Mundo!</li>
+					<li>|</li>
+					<li onclick="sobreMi()" class="sobre">Sobre Mi</li>
+					<li>|</li>
+					<li onclick="porfolio()" class="porf">Portfolio</li>
+					<li>|</li>
+					<li class="cont">Contacto</li>
+					<li>|</li>
+					<li onclick="curri()" class="cv">CV</li>
+				</ul>
+			</nav>
+
+			<div class="menuHamCo">
+				<div class="esquinaSICo"></div>
+				<div class="esquinaIDCo"></div>
+				<div onclick="menuHamburguesaCo()" class="cruzCo">
+					<div class="diagonalCruzCo"></div>
+					<div class="diagonalCruzGCo"></div>
+				</div>
+				<div class="menuHamCont">
+					<ul class="ulCont">
+						<li onclick="hola()" class="holaHam">Hola Mundo!</li>
+						<li onclick="sobreMi()" class="sobreHam">Sobre Mi</li>
+						<li onclick="porfolio()" class="porfHam">Portfolio</li>
+						<li class="contHam">Contacto</li>
+						<li onclick="curri()" class="cvHam">CV</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menuHamCo menuHamContito">
+				<p>Contacto</p>
+			</div>
+
+			<div class="contencont">
+				<p class="fondoContacto">CONTACTO</p>
+				<div class="contenCorreotel">
+					<img class="logoCorreo" src="rsc/img/mail.png" alt="logoEmail">
+					<p class="correo">hola@apbwebdesign.com</p>
+				</div>
+				<div class="contenCorreotel1">
+					<img class="logoTel" src="rsc/img/telefono.png" alt="logoTelefono">
+					<p class="correo">+34 627 33 95 07</p>
+				</div>
+				<form action="mailto:hola@apbwebdesign.com" name="contactito" method="POST">
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" value="" placeholder="Ej: Pedro Ramírez" required id="nombre">
+					<label for="correo">Correo electrónico</label>
+					<input type="email" name="correo" value="" placeholder="Ej: pedroramirez@gmail.com" required id="correo">
+					<label for="mensajito">Mensaje</label>
+					<textarea name="mensajito" id="mensajito" required placeholder="Deja tu mensaje..." value="" cols="30" rows="10"></textarea>
+					<div class="terminosCaja">
+						<input type="checkbox" name="terminos" value="si" id="terminos" required><label class="terminos" for="terminos">He leído y acepto los <a href="rsc/files/politica-de-privacidad.pdf" target="__blank" rel="nofollow">Términos y Condiciones de Uso y política de privacidad</a></label>
+					</div>
+					<button type="submit" name="enviar">Enviar</button>
+				</form>
+			</div>
+			<div class="burbujas">
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+			</div>
+			
+		</section>
+		<section class="secciones curri">
+			<!-- Menú, que no lleva enlaces ya que se intercambiará entre secciones a través de JavaScript -->
+			<nav class="menu menuCv">
+				<ul>
+					<li onclick="hola()" class="hola">Hola Mundo!</li>
+					<li>|</li>
+					<li onclick="sobreMi()" class="sobre">Sobre Mi</li>
+					<li>|</li>
+					<li onclick="porfolio()" class="porf">Portfolio</li>
+					<li>|</li>
+					<li onclick="contacto()" class="cont">Contacto</li>
+					<li>|</li>
+					<li class="cv">CV</li>
+				</ul>
+			</nav>
+
+			<div class="menuHamCV">
+				<div class="esquinaSICV"></div>
+				<div class="esquinaIDCV"></div>
+				<div onclick="menuHamburguesaCV()" class="cruzCV">
+					<div class="diagonalCruzCV"></div>
+					<div class="diagonalCruzGCV"></div>
+				</div>
+				<div id="menuHamCV1">
+					<ul class="ulCv">
+						<li onclick="hola()" class="holaHam">Hola Mundo!</li>
+						<li onclick="sobreMi()" class="sobreHam">Sobre Mi</li>
+						<li onclick="porfolio()" class="porfHam">Portfolio</li>
+						<li onclick="contacto()" class="contHam">Contacto</li>
+						<li class="cvHam">CV</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menuHamCV menuHamCurrito">
+				<p>CV</p>
+			</div>
+
+			<div class="logosCV">
+				<div class="logoMenos">
+					<img src="rsc/img/logo_bootstrap.png" alt="logo bootstrap">
+					<img src="rsc/img/logo_figma.png" alt="logo figma">
+					<img src="rsc/img/logo_python.png" alt="logo python">
+					<img src="rsc/img/logo_wordpress.png" alt="logo wordpress">
+				</div>
+				<div class="logoImportante">
+					<img src="rsc/img/html.png" alt="logo html">
+					<img src="rsc/img/css.png" alt="logo css">
+					<img src="rsc/img/logos_javascript.png" alt="logo js">
+				</div>
+			</div>
+			<div class="formaciones">
+				<div class="formaciones1">
+					<span><a href="https://cei.es/cei-curso/master-desarrollo-web/" target="__blank" rel="nofollow">Máster profesional en desarrollo y conceptualización web</a> - CEI (en desarrollo)</span>
+					<div>
+						<span>- Módulo Wordpress acabado</span>
+						<span>- Módulo Diseño Web(HTML5, CSS3, JS) acabado</span>
+						<span>- Módulo Full-Stack(JS, PHP) en desarrollo</span>
+						<span>- Módulo UX/UI en desarrollo</span>
+					</div>
+				</div>
+				<span class="formaciones2"><a href="https://www.netacad.com/es/courses/programming/pcap-programming-essentials-python" target="__blank" rel="nofollow">PCAP: Programming Essentials in Python</a> - Cisco Networking Academy</span>
+
+			</div>
+			<div class="experiencias">
+				<div class="experiencias1">
+					<span>Técnico de sistemas de energía renovable - <a href="https://www.kemtecnia.com/" target="__blank" rel="nofollow">Kemtecnia, tecnología química y renovables.</a></span>
+					<div>
+						<span>- Cálculo de sistemas fotovoltaicos, eléctricos y automatización con TiaPortal</span>
+					</div>
+				</div>
+				<div class="experiencias2">
+					<span>Monitor de grupo en Malta - <a href="https://www.ef.com.es/" target="__blank" rel="nofollow">EF Education First.</a></span>
+					<div>
+						<span>- Responsable de  unos 20 adolescentes durante su curso de inglés</span>
+					</div>
+				</div>
+			</div>
+			<div class="botonesCV">
+				<div onclick="formacion()" class="botonCV1" id="botonCV1"><span>FORMACIÓN</span></div>
+				<div onclick="habilidades()" class="botonCV2" id="botonCV2"><span>HABILIDADES</span></div>
+				<div onclick="experiencia()" class="botonCV3" id="botonCV3"><span>EXPERIENCIA</span></div>
+			</div>
+			<div class="burbujas">
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+			</div>
+		</section>
+		<!-- Lo siguiente son los logos que se van cada uno a una esquina después de hacer clic en cuaqluiera de ellos -->
+		<div onclick="empezar()" class="logo1"></div>
+		<div onclick="empezar()" class="logo2"></div>
+		<div class="manoClic"></div>
+		<footer>
+			<p>&copy;2021 Todos los derechos reservados</p>
+		</footer>
+	</div>
+	<header></header>
+	<aside></aside>
+	
+	<script src="js/hammer.min.js"></script>
+	<script type="text/javascript">
+		// Con lo siguiente lo que hago es acortar el código después, y así ser más eficiente con la ayuda de variables
+		console.log(screen.width);
+		var logo1 = document.querySelector('.logo1');
+		var logo2 = document.querySelector('.logo2');
+		var principal = document.querySelector('.seccionPrincipal');
+		var secciones = document.querySelector('.secciones');
+		var sobremi = document.querySelector('.sobreMi');
+		var porfolio1 = document.querySelector('.porfolio');
+		var contacto1 = document.querySelector('.contacto');
+		var curri1 = document.querySelector('.curri');
+		var contadorSobre = 0;
+		var ancho = screen.width;
+		//Lo que viene a continuación es la función que hace que los logos giren y se vayan a su posición tras hacer clic en ellos por primera vez y si le volvemos a dar después cuando están en las esquinas para que vuelvan al centro y de nuevo giren
+		// las siguientes variables con para controlar en qué estado se encuentran los logos, es decir, si están en el centro o en las esquinas, y para controlar el número de giros que hacen los logos, que no den dos vueltas o se queden quietos, por ejemplo. 
+		var empezzar = 0;
+		var i = 1;
+		function empezar() {
+			if (empezzar == 0) {
+				logo1.style.transform = "translate(-100%, -50%) rotateX("+i*360+"deg)";
+				logo1.style.transition = ".5s ease-out";
+				logo2.style.transform = "translate(0%, -50%) rotateX("+i*360+"deg)";
+				logo2.style.transition = ".5s ease-out";
+				// la siguiente función es para que comience la función que está dentro de ella tras pasar 600miliseundos
+				
+				setTimeout('empezarDos()',600);
+				empezzar++;
+				i++;
+			}else{
+				secciones.style.clipPath = "polygon(100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%)";
+				principal.style.clipPath = "polygon(100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%)";
+				sobremi.style.clipPath = "polygon(100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%)";
+				porfolio1.style.clipPath = "polygon(100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%)";
+				contacto1.style.clipPath = "polygon(100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%)";
+				curri1.style.clipPath = "polygon(100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%)";
+				secciones.style.transition = ".5s linear";
+				principal.style.transition = ".5s linear";
+				sobremi.style.transition = ".5s linear";
+				porfolio1.style.transition = ".5s linear";
+				contacto1.style.transition = ".5s linear";
+				curri1.style.transition = ".5s linear";
+				// principal.style.display = "none";
+				logo1.style.top = "50%";
+				logo1.style.left = "50%";
+				logo1.style.transition = ".5s linear";	
+				logo2.style.top = "50%";
+				logo2.style.left = "50%";
+				logo2.style.transition = ".5s linear";
+				empezzar--;
+				document.querySelector('.manoClic').style.display = 'block';
+				setTimeout('empezarDos()',600);
+				document.querySelector('footer').style.color = 'var(--fondo)';
+				document.querySelector('footer').style.left = '50%';
+				menuHamJ.width = "40px";
+				menuHamJ.height = "40px";
+				menuHamJ.top = "10%";
+				menuHamJ.left = "unset";
+				menuHamJ.right = "20px";
+				menuHamJ.transition = "0.5s";
+				cruzHamG.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+				cruzHamG.transition = "0.5s"
+				document.querySelector('.menuHamHola').style.display = "none";
+				document.querySelector('footer').style.display = "block";
+			}
+		}
+
+
+		//La siguiente función lo que hace es "abrir" la seccion principal que se vea lo que tiene en su interior, o cerrar, claro, estando siempre controlado, incluso con la variable ancho, lo que hacemos es controlar el ancho de pantalla, para dar una mejor forma al clipPath.
+		function empezarDos() {
+			if (empezzar == 1 && ancho > 768) {
+				secciones.style.clipPath = "polygon(25% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 0 40%)";
+				principal.style.clipPath = "polygon(25% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 0 40%)";
+				sobremi.style.clipPath = "polygon(25% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 0 40%)";
+				porfolio1.style.clipPath = "polygon(25% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 0 40%)";
+				contacto1.style.clipPath = "polygon(25% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 0 40%)";
+				curri1.style.clipPath = "polygon(25% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 0 40%)";
+				secciones.style.display = "block";
+				logo1.style.top = "7%";
+				logo1.style.left = "15%";
+				logo1.style.transition = ".5s linear";	
+				logo2.style.top = "93%";
+				logo2.style.left = "82%";
+				logo2.style.transition = ".5s linear";
+				document.querySelector('footer').style.color = 'var(--principal)';
+				document.querySelector('.manoClic').style.display = 'none';
+			}else if(empezzar == 1 && ancho <= 768){
+				secciones.style.clipPath = "polygon(40% 0px, 100% 0px, 100% 80%, 60% 100%, 0px 100%, 0px 20%)";
+				principal.style.clipPath = "polygon(40% 0px, 100% 0px, 100% 80%, 60% 100%, 0px 100%, 0px 20%)";
+				sobremi.style.clipPath = "polygon(40% 0px, 100% 0px, 100% 80%, 60% 100%, 0px 100%, 0px 20%)";
+				porfolio1.style.clipPath = "polygon(40% 0px, 100% 0px, 100% 80%, 60% 100%, 0px 100%, 0px 20%)";
+				contacto1.style.clipPath = "polygon(40% 0px, 100% 0px, 100% 80%, 60% 100%, 0px 100%, 0px 20%)";
+				curri1.style.clipPath = "polygon(40% 0px, 100% 0px, 100% 80%, 60% 100%, 0px 100%, 0px 20%)";
+				secciones.style.display = "block";
+				logo1.style.top = "5%";
+				logo1.style.left = "24%";
+				logo1.style.transition = ".5s linear";	
+				logo2.style.top = "95%";
+				logo2.style.left = "73%";
+				logo2.style.transition = ".5s linear";
+				document.querySelector('footer').style.color = 'var(--principal)';
+				document.querySelector('footer').style.left = '33%';
+				document.querySelector('.manoClic').style.display = 'none';
+			}else{
+				secciones.style.display = "none";
+				logo1.style.transform = "translate(-100%, -50%) rotateX("+i*360+"deg)";
+				logo1.style.transition = ".5s ease-out";
+				logo2.style.transform = "translate(0%, -50%) rotateX("+i*360+"deg)";
+				logo2.style.transition = ".5s ease-out";
+				i--;
+			}
+		}
+
+		function hola() {
+			empezzar = 1;
+			contadorHam = 0;
+			empezar();
+			setTimeout('hola2()', 600);
+		}
+		function hola2() {
+			empezzar = 1;
+			setTimeout('empezarDos()', 600);
+			setTimeout('hola3()', 600);
+		}
+		function hola3() {
+			secciones.style.display = "block";
+			principal.style.display = "block";
+			sobremi.style.display = "none";
+			porfolio1.style.display = "none";
+			contacto1.style.display = "none";
+			curri1.style.display = "none";
+			menuHamJ.width = "40px";
+			menuHamJ.height = "40px";
+			menuHamJ.top = "10%";
+			menuHamJ.left = "unset";
+			menuHamJ.right = "20px";
+			menuHamJ.transition = "0.5s";
+			cruzHamG.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+			cruzHamG.transition = "0.5s"
+			document.querySelector('.menuHamHola').style.display = "none";
+			document.querySelector('footer').style.display = "block";
+		}
+
+		function sobreMi() {
+			console.log(contadorSobre);
+			empezzar = 1;
+			contadorSobre = 0;
+			contadorHam = 0;
+			document.querySelector('.flechaAtras').style.display = 'none';
+			document.querySelector('.flechaAvanza').style.display = 'block';
+			contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(0deg)';
+			empezar();
+			setTimeout('sobreMi2()', 600);
+		}
+		function sobreMi2() {
+			empezzar = 1;
+			setTimeout('empezarDos()', 600);
+			setTimeout('sobreMi3()', 600);
+		}
+		function sobreMi3() {
+			secciones.style.display = "block";
+			principal.style.display = "none";
+			sobremi.style.display = "block";
+			porfolio1.style.display = "none";
+			contacto1.style.display = "none";
+			curri1.style.display = "none";
+			menuHamJS.width = "40px";
+			menuHamJS.height = "40px";
+			menuHamJS.top = "10%";
+			menuHamJS.left = "unset";
+			menuHamJS.right = "20px";
+			menuHamJS.transition = "0.5s";
+			cruzHamGS.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+			cruzHamGS.transition = "0.5s"
+			document.querySelector('.menuHamSobre').style.display = "none";
+			document.querySelector('footer').style.display = "block";
+		}
+
+		function porfolio() {
+			empezzar = 1;
+			contadorHam = 0;
+			document.querySelector('.menuHamPorf').style.display = "none";
+			menuHamJP.width = "40px";
+			menuHamJP.height = "40px";
+			menuHamJP.top = "10%";
+			menuHamJP.left = "unset";
+			menuHamJP.right = "20px";
+			menuHamJP.transition = "0.5s";
+			cruzHamGP.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+			cruzHamGP.transition = "0.5s";
+			document.querySelector('footer').style.display = "block";
+			empezar();
+			setTimeout('porfolio2()', 600);
+		}
+		function porfolio2() {
+			empezzar = 1;
+			setTimeout('empezarDos()', 600);
+			setTimeout('porfolio3()', 600);
+		}
+		function porfolio3() {
+			secciones.style.display = "block";
+			principal.style.display = "none";
+			sobremi.style.display = "none";
+			porfolio1.style.display = "block";
+			contacto1.style.display = "none";
+			curri1.style.display = "none";
+			document.querySelector('#pagWeb1').removeClass('pagWeb1').addClass('pagWeb1');
+			document.querySelector('#pagWeb2').removeClass('pagWeb2').addClass('pagWeb2');
+			document.querySelector('#pagWeb3').removeClass('pagWeb3').addClass('pagWeb3');
+		}
+
+		function contacto() {
+			empezzar = 1;
+			contadorHam = 0;
+			empezar();
+			setTimeout('contacto2()', 600);
+		}
+		function contacto2() {
+			empezzar = 1;
+			setTimeout('empezarDos()', 600);
+			setTimeout('contacto3()', 600);
+		}
+		function contacto3() {
+			secciones.style.display = "block";
+			principal.style.display = "none";
+			sobremi.style.display = "none";
+			porfolio1.style.display = "none";
+			contacto1.style.display = "block";
+			curri1.style.display = "none";
+			menuHamJCo.width = "40px";
+			menuHamJCo.height = "40px";
+			menuHamJCo.top = "10%";
+			menuHamJCo.left = "unset";
+			menuHamJCo.right = "20px";
+			menuHamJCo.transition = "0.5s";
+			cruzHamGCo.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+			cruzHamGCo.transition = "0.5s"
+			document.querySelector('.menuHamCont').style.display = "none";
+			document.querySelector('footer').style.display = "block";
+		}
+
+		function curri() {
+			empezzar = 1;
+			contadorHam = 0;
+			menuHamJCV.width = "40px";
+			menuHamJCV.height = "40px";
+			menuHamJCV.top = "10%";
+			menuHamJCV.left = "unset";
+			menuHamJCV.right = "20px";
+			menuHamJCV.transition = "0.5s";
+			cruzHamGCV.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+			cruzHamGCV.transition = "0.5s"
+			document.querySelector('#menuHamCV1').style.display = "none";
+			document.querySelector('footer').style.display = "block";
+			empezar();
+			setTimeout('curri2()', 600);
+		}
+		function curri2() {
+			empezzar = 1;
+			setTimeout('empezarDos()', 600);
+			setTimeout('curri3()', 600);
+		}
+		function curri3() {
+			secciones.style.display = "block";
+			principal.style.display = "none";
+			sobremi.style.display = "none";
+			porfolio1.style.display = "none";
+			contacto1.style.display = "none";
+			curri1.style.display = "block";
+			botonCV1.classList.remove("botonCV1pul");
+			botonCV1.classList.add("botonCV1");
+			botonCV2.classList.remove("botonCV2pul");
+			botonCV2.classList.add("botonCV2");
+			botonCV3.classList.remove("botonCV3pul");
+			botonCV3.classList.add("botonCV3");
+			formacionesCV.style.display = 'none';
+			logosCV.style.display = 'none';
+			experienciasCV.style.display = 'none';
+		}
+// --------<botonesCV>-------------------
+		var logosCV = document.querySelector('.logosCV');
+		var formacionesCV = document.querySelector('.formaciones');
+		var experienciasCV = document.querySelector('.experiencias');
+		var botonCV1 = document.querySelector('#botonCV1');
+		var botonCV2 = document.querySelector('#botonCV2');
+		var botonCV3 = document.querySelector('#botonCV3');
+
+		function formacion() {
+			formacionesCV.style.display = 'flex';
+			logosCV.style.display = 'none';
+			experienciasCV.style.display = 'none';
+			botonCV1.classList.remove("botonCV1");
+			botonCV1.classList.add("botonCV1pul");
+			botonCV2.classList.remove("botonCV2pul");
+			botonCV2.classList.add("botonCV2");
+			botonCV3.classList.remove("botonCV3pul");
+			botonCV3.classList.add("botonCV3");
+		}
+
+		function habilidades() {
+			formacionesCV.style.display = 'none';
+			logosCV.style.display = 'block';
+			experienciasCV.style.display = 'none';
+			botonCV1.classList.remove("botonCV1pul");
+			botonCV1.classList.add("botonCV1");
+			botonCV2.classList.remove("botonCV2");
+			botonCV2.classList.add("botonCV2pul");
+			botonCV3.classList.remove("botonCV3pul");
+			botonCV3.classList.add("botonCV3");
+		}
+
+		function experiencia() {
+			formacionesCV.style.display = 'none';
+			logosCV.style.display = 'none';
+			experienciasCV.style.display = 'flex';
+			botonCV1.classList.remove("botonCV1pul");
+			botonCV1.classList.add("botonCV1");
+			botonCV2.classList.remove("botonCV2pul");
+			botonCV2.classList.add("botonCV2");
+			botonCV3.classList.remove("botonCV3");
+			botonCV3.classList.add("botonCV3pul");
+		}
+// -------------<CARRUSEL>-------------
+		function bloquear1() {
+			document.querySelector('.pagWeb1').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb2').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb3').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb1').style.opacity = '100%';
+			document.querySelector('.pagWeb2').style.opacity = '0%';
+			document.querySelector('.pagWeb3').style.opacity = '0%';
+			document.querySelector('.pagWeb1').style.zIndex = '10';
+		}
+
+		function continuar() {
+			document.querySelector('.pagWeb1').style.animationPlayState = 'running';
+			document.querySelector('.pagWeb2').style.animationPlayState = 'running';
+			document.querySelector('.pagWeb3').style.animationPlayState = 'running';
+		}
+
+		function bloquear2() {
+			document.querySelector('.pagWeb1').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb2').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb3').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb2').style.opacity = '100%';
+			document.querySelector('.pagWeb1').style.opacity = '0%';
+			document.querySelector('.pagWeb3').style.opacity = '0%';
+			document.querySelector('.pagWeb2').style.zIndex = '10';
+		}
+
+		function bloquear3() {
+			document.querySelector('.pagWeb1').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb2').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb3').style.animationPlayState = 'paused';
+			document.querySelector('.pagWeb3').style.opacity = '100%';
+			document.querySelector('.pagWeb1').style.opacity = '0%';
+			document.querySelector('.pagWeb2').style.opacity = '0%';
+			document.querySelector('.pagWeb3').style.zIndex = '10';
+		}
+
+// --------------<FLECHAS SOBRE MI>------------
+		var contenedorSobre1 = document.querySelector('.contenedorSobre');
+
+		function avanzaSobre() {
+			contadorSobre++;
+			avanzaSobre1();
+		}
+		function atrasSobre() {
+			contadorSobre--;
+			atrasSobre1();
+		}
+		
+		function avanzaSobre1() {
+			// contadorSobre++;
+			if (contadorSobre == 0) {
+				document.querySelector('.flechaAtras').style.display = 'none';
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(0deg)';
+				contenedorSobre1.style.transition = '1s';
+			}else if(contadorSobre == 1) {
+				document.querySelector('.flechaAtras').style.display = 'block';
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(90deg)';
+				contenedorSobre1.style.transition = '1s'; 
+			}else if(contadorSobre == 2) {
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(180deg)';
+				contenedorSobre1.style.transition = '1s';
+				document.querySelector('.flechaAvanza').style.display = 'block';
+			}else{
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(270deg)';
+				contenedorSobre1.style.transition = '1s';
+				document.querySelector('.flechaAvanza').style.display = 'none';
+				contadorSobre = 3;
+			}
+		}
+
+		function atrasSobre1() {
+			// contadorSobre--;
+			if (contadorSobre == 0) {
+				document.querySelector('.flechaAtras').style.display = 'none';
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(0deg)';
+				contenedorSobre1.style.transition = '1s';
+			}else if(contadorSobre == 1) {
+				document.querySelector('.flechaAtras').style.display = 'block';
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(90deg)';
+				contenedorSobre1.style.transition = '1s'; 
+			}else if(contadorSobre == 2) {
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(180deg)';
+				contenedorSobre1.style.transition = '1s';
+				document.querySelector('.flechaAvanza').style.display = 'block';
+			}else{
+				contenedorSobre1.style.transform = 'translate(-50%, -50%) rotateZ(270deg)';
+				contenedorSobre1.style.transition = '1s';
+				document.querySelector('.flechaAvanza').style.display = 'none';
+				contadorSobre = 3;
+			}
+		}
+
+		var cuadrante1Sobre = document.querySelector('.cuadrante1');
+		var c1S = new Hammer(cuadrante1Sobre);
+		var cuadrante2Sobre = document.querySelector('.cuadrante2');
+		var c2S = new Hammer(cuadrante2Sobre);
+		var cuadrante3Sobre = document.querySelector('.cuadrante3');
+		var c3S = new Hammer(cuadrante3Sobre);
+		var cuadrante4Sobre = document.querySelector('.cuadrante4');
+		var c4S = new Hammer(cuadrante4Sobre);
+
+
+		c1S.on("panleft panright tap press", function(ev) {
+    		if (ev.type == 'panleft'){
+    			contadorSobre = 0;
+    			atrasSobre1();
+    		}else if (ev.type == 'panright') {
+    			contadorSobre = 1;
+    			avanzaSobre1();
+    		}
+		});
+		c2S.on("panleft panright tap press", function(ev) {
+    		if (ev.type == 'panleft'){
+    			contadorSobre = 0;
+    			atrasSobre1();
+    		}else if (ev.type == 'panright') {
+    			contadorSobre = 2;
+    			avanzaSobre1();
+    		}
+		});
+		c3S.on("panleft panright tap press", function(ev) {
+    		if (ev.type == 'panleft'){
+    			contadorSobre = 1;
+    			atrasSobre1();
+    		}else if (ev.type == 'panright') {
+    			contadorSobre = 3;
+    			avanzaSobre1();
+    		}
+		});
+		c4S.on("panleft panright tap press", function(ev) {
+    		if (ev.type == 'panleft'){
+    			contadorSobre = 2;
+    			atrasSobre1();
+    		}else if (ev.type == 'panright') {
+    			contadorSobre = 3;
+    			avanzaSobre1();
+    		}
+		});
+
+// =============================Menú Hamburguesa============================================
+		var contadorHam = 0;
+		var menuHamJ = document.querySelector('.menuHam').style;
+		var cruzHam = document.querySelector('.cruz').style;
+		var cruzHamG = document.querySelector('.diagonalCruzG').style;
+
+
+		var menuHamJS = document.querySelector('.menuHamS').style;
+		var cruzHamS = document.querySelector('.cruzS').style;
+		var cruzHamGS = document.querySelector('.diagonalCruzGS').style;
+
+
+		var menuHamJP = document.querySelector('.menuHamP').style;
+		var cruzHamP = document.querySelector('.cruzP').style;
+		var cruzHamGP = document.querySelector('.diagonalCruzGP').style;
+
+		var menuHamJCo = document.querySelector('.menuHamCo').style;
+		var cruzHamCo = document.querySelector('.cruzCo').style;
+		var cruzHamGCo = document.querySelector('.diagonalCruzGCo').style;
+
+		var menuHamJCV = document.querySelector('.menuHamCV').style;
+		var cruzHamCV = document.querySelector('.cruzCV').style;
+		var cruzHamGCV = document.querySelector('.diagonalCruzGCV').style;
+
+		function menuHamburguesa() {
+			if (contadorHam == 0) {
+				menuHamJ.width = "100%";
+				menuHamJ.height = "100%";
+				menuHamJ.transition = "0.3s";
+				menuHamJ.top = "0";
+				menuHamJ.left = "0";
+				menuHamJ.right = "unset";
+				cruzHam.top = "10%";
+				cruzHam.right = "20px";
+				cruzHamG.transform = "translate(-50%, -50%) rotateZ(45deg)";
+				cruzHamG.transition = "0.3s"
+				document.querySelector('.menuHamHola').style.display = "block";
+				document.querySelector('footer').style.display = "none";
+				contadorHam++;
+			}else{
+				menuHamJ.width = "40px";
+				menuHamJ.height = "40px";
+				menuHamJ.top = "10%";
+				menuHamJ.left = "unset";
+				menuHamJ.right = "20px";
+				menuHamJ.transition = "0.5s";
+				cruzHamG.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+				cruzHamG.transition = "0.5s"
+				document.querySelector('.menuHamHola').style.display = "none";
+				document.querySelector('footer').style.display = "block";
+				contadorHam--;
+			}
+		}
+
+		function menuHamburguesaS() {
+			if (contadorHam == 0) {
+				menuHamJS.width = "100%";
+				menuHamJS.height = "100%";
+				menuHamJS.top = "0";
+				menuHamJS.left = "0";
+				menuHamJS.right = "unset";
+				menuHamJS.transition = "0.3s";
+				cruzHamS.top = "10%";
+				cruzHamS.right = "20px";
+				cruzHamGS.transform = "translate(-50%, -50%) rotateZ(45deg)";
+				cruzHamGS.transition = "0.3s"
+				document.querySelector('.menuHamSobre').style.display = "block";
+				document.querySelector('footer').style.display = "none";
+				contadorHam++;
+			}else{
+				menuHamJS.width = "40px";
+				menuHamJS.height = "40px";
+				menuHamJS.top = "10%";
+				menuHamJS.left = "unset";
+				menuHamJS.right = "20px";
+				menuHamJS.transition = "0.5s";
+				cruzHamGS.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+				cruzHamGS.transition = "0.5s"
+				document.querySelector('.menuHamSobre').style.display = "none";
+				document.querySelector('footer').style.display = "block";
+				contadorHam--;
+			}	
+		}
+
+		function menuHamburguesaP() {
+			if (contadorHam == 0) {
+				menuHamJP.width = "100%";
+				menuHamJP.height = "100%";
+				menuHamJP.top = "0";
+				menuHamJP.left = "0";
+				menuHamJP.right = "unset";
+				menuHamJP.transition = "0.3s";
+				cruzHamP.top = "10%";
+				cruzHamP.right = "20px";
+				cruzHamGP.transform = "translate(-50%, -50%) rotateZ(45deg)";
+				cruzHamGP.transition = "0.3s"
+				document.querySelector('.menuHamPorf').style.display = "block";
+				document.querySelector('footer').style.display = "none";
+				contadorHam++;
+			}else{
+				menuHamJP.width = "40px";
+				menuHamJP.height = "40px";
+				menuHamJP.top = "10%";
+				menuHamJP.left = "unset";
+				menuHamJP.right = "20px";
+				menuHamJP.transition = "0.5s";
+				cruzHamGP.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+				cruzHamGP.transition = "0.5s"
+				document.querySelector('.menuHamPorf').style.display = "none";
+				document.querySelector('footer').style.display = "block";
+				contadorHam--;
+			}	
+		}
+		
+		function menuHamburguesaCo() {
+			if (contadorHam == 0) {
+				console.log(contadorHam);
+				menuHamJCo.width = "100%";
+				menuHamJCo.height = "100%";
+				menuHamJCo.top = "0";
+				menuHamJCo.left = "0";
+				menuHamJCo.right = "unset";
+				menuHamJCo.transition = "0.3s";
+				cruzHamCo.top = "10%";
+				cruzHamCo.right = "20px";
+				cruzHamGCo.transform = "translate(-50%, -50%) rotateZ(45deg)";
+				cruzHamGCo.transition = "0.3s"
+				document.querySelector('.menuHamCont').style.display = "block";
+				document.querySelector('footer').style.display = "none";
+				contadorHam++;
+			}else{
+				menuHamJCo.width = "40px";
+				menuHamJCo.height = "40px";
+				menuHamJCo.top = "10%";
+				menuHamJCo.left = "unset";
+				menuHamJCo.right = "20px";
+				menuHamJCo.transition = "0.5s";
+				cruzHamGCo.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+				cruzHamGCo.transition = "0.5s"
+				document.querySelector('.menuHamCont').style.display = "none";
+				document.querySelector('footer').style.display = "block";
+				contadorHam--;
+			}	
+		}
+
+		function menuHamburguesaCV() {
+			if (contadorHam == 0) {
+				console.log(contadorHam);
+				menuHamJCV.width = "100%";
+				menuHamJCV.height = "100%";
+				menuHamJCV.transition = "0.3s";
+				menuHamJCV.top = "0";
+				menuHamJCV.left = "0";
+				menuHamJCV.right = "unset";
+				cruzHamCV.top = "10%";
+				cruzHamCV.right = "20px";
+				cruzHamGCV.transform = "translate(-50%, -50%) rotateZ(45deg)";
+				cruzHamGCV.transition = "0.3s"
+				document.querySelector('#menuHamCV1').style.display = "block";
+				document.querySelector('footer').style.display = "none";
+				contadorHam++;
+			}else{
+				console.log(contadorHam);
+				menuHamJCV.width = "40px";
+				menuHamJCV.height = "40px";
+				menuHamJCV.top = "10%";
+				menuHamJCV.left = "unset";
+				menuHamJCV.right = "20px";
+				menuHamJCV.transition = "0.5s";
+				cruzHamGCV.transform = "translate(-50%, -50%) rotateZ(-45deg)";
+				cruzHamGCV.transition = "0.5s"
+				document.querySelector('#menuHamCV1').style.display = "none";
+				document.querySelector('footer').style.display = "block";
+				contadorHam--;
+			}
+		}
+
+	</script>
+
+</body>
+</html>

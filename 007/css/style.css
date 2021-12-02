@@ -1,0 +1,268 @@
+/* FUENTES */
+
+
+/* VARIABLES */
+
+
+/* CSS COMÚN */
+
+html	{
+	scroll-behavior: smooth;
+}
+
+*	{
+	box-sizing: border-box;
+}
+
+body	{
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+
+.bgNav	{
+	background: transparent;
+	display: flex;
+	margin: 0;
+	height: 60px;
+	/*justify-content: space-between;*/
+}
+
+.fondito	{
+	background: linear-gradient(90deg, red, black);
+}
+
+.colorines	{
+	background: #0E0000;
+	color: white;
+	font-size: 30px;
+	z-index: 1005;
+	display: flex;
+	align-items: center;
+	/*height: 70px;*/
+}
+
+.loguito	{
+	height: 50px;
+}
+
+.listita	{
+	background: #0E0000;
+	padding-right: 30px;
+}
+
+.titulo	{
+	font-size: 30px;
+	color: white;
+}
+
+.separador	{
+	height: 76px;
+	width: 100%;
+}
+
+.cabecera	{
+	width: 100%;
+	height: 85vh;
+	background: url('../rsc/img/todoslosbond.jpg') no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.tamano	{
+	margin-top: 200px;
+	width: 200px;
+	background: #0E0000;
+}
+
+.sinSombra	{
+	box-shadow: 0;
+	border: 0;
+	margin-top: 50px;
+	height: 80vh;
+	width: 100%;
+	background: black;
+	margin-bottom: 20px;
+}
+
+.sep	{
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.altura h5	{
+	font-size: 40px;
+}
+
+.amcho	{
+	width: 100vh;
+	margin-left: 50%;
+}
+
+.noTime	 {
+	width: 100%;
+	height: 60vh;
+	background: url('../rsc/img/No-Time-to-Die-characters.jpg') no-repeat center center;
+	background-size: contain;
+	margin-top: 20px;
+}
+
+.separador1	{
+	width: 100%;
+	height: 60px;
+}
+
+.galeria	{
+	font-size: 40px;
+	color: white;
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding-top: 12px;
+	margin-bottom: 12px;
+}
+
+.sepsec	{
+	margin-bottom: 30px;
+}
+
+.cartita	{
+	background: black;
+	color: white;
+}
+
+.cartita h5	{
+	font-size: 35px;
+}
+
+.linea	{
+	border-top: 1px solid rgba(255,255,255,.5);
+}
+
+.sinb	{
+	border: 0;
+}
+
+.foncart	{
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+		margin-right: 130px;
+		margin-left: 130px;
+	}
+.sep1	{
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid rgba(255,255,255,.5);
+}
+
+.sep1 .col	{
+	color: white;
+}
+
+.res	{
+	font-size: 40px;
+	color: white;
+}
+
+.colorino	{
+	color: white;
+}
+
+.loguito2	{
+	height: 30px;
+}
+
+.loguito21	{
+	height: 30px;
+	margin-right: 10px;
+}
+
+.sepcop	{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.sepito	{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+/*Smart TV*/
+@media screen and (min-width: 1921){}
+
+/*Laptop / desktop*/
+@media screen and (max-width: 1920){}
+
+/*Tablet*/
+@media screen and (max-width: 992){}
+
+/*smartphone*/
+@media screen and (max-width: 828px){
+
+	.titulo	{
+		font-size: 25px;
+		height: 76px;
+		margin-left: 20px;
+	}
+
+	.altura {
+		padding-left: 15px;
+		width: 200px;
+		margin-top: 25px;
+	}
+
+	.altura h5	{
+		font-size: 25px;
+	}
+
+	.colorines	{
+		padding-left: 15px;
+	}
+
+	.sinSombra	{
+		height: auto;
+		width: 100%;
+	}
+
+	.amcho	{
+		margin-left: 0;
+		width: 100%;
+	}
+	.noTime	{
+		margin-top: -100px;
+	}
+
+	.separador1	{
+		height: 0;
+		margin-top: -50px;
+	}
+
+	.topo	{
+		margin-top: 40px;
+	}
+
+	.holi	{
+		padding: 20px;
+	}
+
+	.topito	{
+		margin-bottom: 90px;
+	}
+
+	.foncart	{
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+		margin: 0;
+	}
+	
+	.sep2	{
+		margin-top: 40px;
+	}
+}
+
+/*smartwatch*/
+@media screen and (max-width: 369){}
+
+/* ANIMACIONES */
+

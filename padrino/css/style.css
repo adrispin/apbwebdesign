@@ -1,0 +1,409 @@
+/* FUENTES */
+
+@font-face{
+	font-family: "corleone";
+	src: url("../rsc/fonts/CorleoneDue.TTF") format("truetype"); 
+}
+
+/* VARIABLES */
+
+
+/* CSS COMÚN */
+
+*	{
+	box-sizing: border-box;
+	font-family: corleone;
+	font-size: 25px !important;
+}
+
+body	{
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+
+.menucillo	{
+	background: black;
+	color: white;
+}
+
+.perrito	{
+	width: 1366px;
+	height: calc(100vh - 62.5px);
+	background: #000000;
+	
+}
+
+.godfather	{
+	width: 424px;
+	height: 100%;
+	background: url(../rsc/img/padrinillo.jpeg);
+	background-size: cover;
+}
+
+.imagen11{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/boda.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 12%;
+	left: 650px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen11:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(20%, 20%);
+}
+
+.imagen12{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/Escenas-mansiones-el-padrino-SF-11.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 24%;
+	left: 920px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen12:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(-20%, 10%);
+}
+
+.imagen13{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/muertesony2.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 38%;
+	left: 550px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen13:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(20%, -13%);
+}
+
+.imagen14{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/vitoshot.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 55%;
+	left: 720px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen14:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(0%, -20%);
+}
+
+.imagen15{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/michaelgodfather.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 45%;
+	left: 970px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen15:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(-20%, -20%);
+}
+
+.perrito1	{
+	width: 1366px;
+	height: calc(100vh - 62.5px);
+	background: #000000;
+	/*display: flex;*/
+	margin-left: -185px;
+}
+
+.godfather2	{
+	width: 424px;
+	height: 100%;
+	/*background: url(../rsc/img/padri2.jpg) -20% center;
+	background-size: cover;*/
+}
+
+.ajuste	{
+	height: 100%;
+}
+
+.imagen21{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/cumple2.png);
+	background-size: cover;
+	position: absolute;
+	top: 12%;
+	left: 650px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen21:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(20%, 20%);
+}
+
+.imagen22{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/donciccio2.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 24%;
+	left: 920px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen22:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(-20%, 10%);
+}
+
+.imagen23{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/mishijos2.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 38%;
+	left: 550px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen23:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(20%, -13%);
+}
+
+.imagen24{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/Vito-murders-Don-Fanucci-from-The-Godfather-Part-II.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 55%;
+	left: 720px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen24:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(0%, -20%);
+}
+
+.imagen25{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/fredo2.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 45%;
+	left: 970px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen25:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(-20%, -20%);
+}
+
+.perrito2	{
+	width: 1366px;
+	height: calc(100vh - 62.5px);
+	background: black;
+	margin-left: -388px;
+}
+
+.imagen31{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/escena3.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 12%;
+	left: 650px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen31:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(20%, 20%);
+}
+
+.imagen32{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/helicopter3.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 24%;
+	left: 920px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen32:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(-20%, 10%);
+}
+
+.imagen33{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/michael3.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 38%;
+	left: 550px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen33:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(20%, -13%);
+}
+
+.imagen34{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/mueremary3.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 55%;
+	left: 720px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen34:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(0%, -20%);
+}
+
+.imagen35{
+	width: 318px;
+	height: 236px;
+	background: url(../rsc/img/zasamuere3.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 45%;
+	left: 970px;
+	-webkit-transition: transform .5s ease-out !important;
+	-moz-transition: transform .5s ease-out !important;
+	-o-transition: transform .5s ease-out !important;
+	transition: transform .5s ease-out !important;
+}
+
+.imagen35:hover	{
+	z-index: 2000;
+	transform: scale(1.7) translate(-20%, -20%);
+}
+
+.principal	{
+	width: 100%;
+	height: calc(100vh - 62.5px);
+	background: black;
+	display: flex;
+	justify-content: space-around;
+}
+
+.principal > div	{
+	width: 33%;
+	height: 100%;
+}
+
+.padrinito1	{
+	background: url(../rsc/img/padrinillo.jpeg);
+	background-size: cover;
+}
+
+.padrinito2	{
+	background: url(../rsc/img/portada2.png);
+	background-size: cover;
+}
+
+.padrinito3	{
+	background: url(../rsc/img/padri3n.png) 0% 80%;
+	background-size: cover;
+}
+
+.perrito3	{
+	width: 1366px;
+	height: calc(100vh - 62.5px);
+	background: black;
+	margin-left: -598px;
+}
+
+
+/* RESPONSIVE */
+
+/*Smart TV*/
+@media screen and (min-width: 1921px){}
+
+/*Laptop / desktop*/
+@media screen and (max-width: 1920px){}
+
+/*Tablet*/
+@media screen and (max-width: 992px){}
+
+/*smartphone*/
+@media screen and (max-width: 828px){}
+
+/*smartwatch*/
+@media screen and (max-width: 369px){}
+
+/* ANIMACIONES */
+
